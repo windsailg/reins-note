@@ -1,12 +1,12 @@
 ---
 title: 專案- AlphaCamp 雲端記帳本
+tags:
+  - AlphaCamp
+abbrlink: 54265
 date: 2020-09-07 20:00:11
-tags: 
- - AlphaCamp
-
 ---
 
-![cover](/images/expense_tracker.jpg)
+![cover](/reins-note/images/expense_tracker.jpg)
 
 
  ## AlphaCamp 學習專案介紹
