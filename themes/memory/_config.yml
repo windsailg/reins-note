@@ -10,10 +10,10 @@ disqus: ashare
 menu:
 - name: About
   slug: about
-  url: /about
+  url: /reins-note/about
 - name: 文章列表
   slug: 文章列表
-  url: /archives
+  url: /reins-note/archives
 
 # Search
 search: 
