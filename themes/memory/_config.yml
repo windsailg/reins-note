@@ -1,0 +1,72 @@
+# Meta
+keywords: hexo,theme,otakism
+site_desc:
+
+
+disqus: ashare
+  
+
+# Navigation
+menu:
+- name: About
+  slug: about
+  url: /about
+- name: 文章列表
+  slug: 文章列表
+  url: /archives
+
+# Search
+search: 
+  enable: false
+  service: #google/hexo/algolia/azure
+  # google 
+  google_api_key:
+  google_engine_id:
+  # algolia
+  algolia_app_id:
+  algolia_api_key:
+  algolia_index_name:
+  # azure
+  azure_service_name:
+  azure_index_name:
+  azure_query_key:
+
+# Miscellaneous
+google_analytics: UA-119741657-1
+author_url: https://artifact.me
+
+# Scss
+node_sass:
+  debug: false
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
+
+# use url, not username
+social:
+- slug: email
+  url:
+- slug: github
+  url: https://github.com/windsailg
+- slug: twitter
+  url:
+- slug: rss
+  url: 
+- slug: google
+  url:
+- slug: facebook
+  url:
+- slug: linkedin
+  url:
+- slug: sina-weibo
+  url:
+- slug: tumblr
+  url:
+- slug: dribbble
+  url:
+- slug: pinterest
+  url:
+- slug: instagram
+  url:
+- slug: behance
+  url:
