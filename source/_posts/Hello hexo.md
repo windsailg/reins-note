@@ -1,7 +1,8 @@
 ---
 title: Hello Hexo
-date: 2021-02-22 16:24:41
+date: 2021-02-02 16:24:41
 tags: hexo 
+abbrlink: 6745
 ---
 
 

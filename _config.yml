@@ -15,8 +15,11 @@ timezone: ''
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
 url: https://windsailg.github.io/
 root: /reins-note
-permalink: :title/
+permalink: :abbrlink/
 permalink_defaults:
+abbrlink:
+  alg: crc16
+  rep: hex
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
@@ -99,6 +102,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: memory
+
 
 disqus_shortname: reinsnote
 # Deployment
