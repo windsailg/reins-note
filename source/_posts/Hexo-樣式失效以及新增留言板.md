@@ -33,7 +33,7 @@ https://hexo.io/zh-cn/docs/github-pages.html
 
 我的解決方式是把整個hexo專案的git清除重下指令 git init，再重開一個新的github repo，畢竟第一次推送，也沒有需要版控的地方。
 
-覺得重開泰麻煩的畫，可以用fork的方式，直接把theme作者的 github 專案 fork到自己的repo，這個部分就不贅述。
+覺得重開太麻煩的話，可以用fork的方式，直接把theme作者的 github 專案 fork到自己的repo，這個部分就不贅述。
 
 
 ### 開啟留言板
