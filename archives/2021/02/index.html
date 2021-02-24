@@ -110,7 +110,7 @@
 <h3 id="推測可能的錯誤"><a href="#推測可能的錯誤" class="headerlink" title="推測可能的錯誤"></a>推測可能的錯誤</h3><p> 因為theme是clone下來的，所以其實theme中有.git檔案，這會造成推送到github錯誤</p>
 <h3 id="解決方法"><a href="#解決方法" class="headerlink" title="解決方法"></a>解決方法</h3><p>用指令刪除 theme 資料夾內的 .git 但這樣整個 hexo專案資料夾內的 git紀錄都會出錯，要操作git時都會回傳 fatal: Not a git repository (or any of the parent directories) 錯誤。</p>
 <p>我的解決方式是把整個hexo專案的git清除重下指令 git init，再重開一個新的github repo，畢竟第一次推送，也沒有需要版控的地方。</p>
-<p>覺得重開泰麻煩的畫，可以用fork的方式，直接把theme作者的 github 專案 fork到自己的repo，這個部分就不贅述。</p>
+<p>覺得重開太麻煩的話，可以用fork的方式，直接把theme作者的 github 專案 fork到自己的repo，這個部分就不贅述。</p>
 <h3 id="開啟留言板"><a href="#開啟留言板" class="headerlink" title="開啟留言板"></a>開啟留言板</h3><p>我在主題作者的demo內看到有留言版功能，但下載回來後卻沒看到相關選項，查了資料都說可以新增config.yml 中的disqus_shortname 名稱，但下載回來的yml沒有這個選項阿！</p>
 <p>又因為theme的script有撰寫disqus的語法，所以試著直接加入這行</p>
 <pre><code> disqus_shortname: &lt;disqus website Name&gt;
