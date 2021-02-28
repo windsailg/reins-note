@@ -15,7 +15,7 @@ menu:
   slug: 文章列表
   url: /reins-note/archives
 
-favicon: /img/fav.png
+favicon: /reins-note/img/fav.png
 
 # Search
 search: 
