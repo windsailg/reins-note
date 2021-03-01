@@ -130,6 +130,7 @@
   }
   pre {
     display: block;
+    background-color: #1d2d3c;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: $code-font-family;
@@ -138,7 +139,6 @@
     padding: 10px 15px;
     white-space: pre;
     overflow: auto;
-
     code {
       // color: $text-color;
       color: $dribbble-color;
