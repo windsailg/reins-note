@@ -1,5 +1,5 @@
 ---
-title: JavaScript ES6 與 reduce() 方法篩選鍵值重複的陣列物件
+title: JavaScript 用 reduce() 方法篩選鍵值重複的陣列物件
 tags: 
 - JavaScript 
 - method
@@ -109,6 +109,8 @@ currentIndex 跟 array 筆者還沒查到好用的用法，本文先不討論
           { id: 4, name: 'Diva' }
      ]
 
+
+---
 
 ### 結語
 
