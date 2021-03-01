@@ -93,7 +93,7 @@
     
         <h2 class="title">
             <a href="/reins-note/0228/">
-                JavaScript 用 reduce() 方法篩選鍵值重複的陣列物件
+                JavaScript ES6 與 reduce() 方法篩選鍵值重複的陣列物件
             </a>
         </h2>
     
@@ -142,7 +142,7 @@
  const result = arr.reduce((acc, cur) =&gt; acc.find(item =&gt; item.id === cur.id) ? acc : [...acc, cur], [])
  console.log(result)
 </code></pre>
-<p><strong>配上ES6，就看不懂這段在幹嘛了呢，真棒。</strong></p>
+<p><strong>配上ES6的語法，就看不懂這段在幹嘛了呢，真棒。</strong></p>
 <p>我們首先來看，先將 initialValue 設定為空陣列<br>並在每次比較時對 acc 當中的物件做 find()<br>因為 find() 方法只會回傳一次 true 或 false<br>那麼只要沒有 id 重複的物件，就會回傳 false 並 return 一個加入 cur 的陣列<br>另外 […acc, cur] 是展開運算子，用來展開 acc 陣列，用來加入 cur 到一個空的陣列中，</p>
 <p>如果不重複，回傳一個加入cur的陣列</p>
 <pre><code> // result = [
@@ -290,7 +290,7 @@
 <h2 id="過程中你有對哪個技術有特別深刻的學習？"><a href="#過程中你有對哪個技術有特別深刻的學習？" class="headerlink" title="過程中你有對哪個技術有特別深刻的學習？"></a>過程中你有對哪個技術有特別深刻的學習？</h2><p>比較深刻的是passport跟connectFlash做提示訊息的處理流程，當時為了優化體驗，針對這兩個工具去查了文件，雖不能說運用自如，目前對使用流暢的要求基本上都可以達到。</p>
 <h2 id="玩看看記帳本"><a href="#玩看看記帳本" class="headerlink" title="玩看看記帳本"></a>玩看看記帳本</h2><p><a target="_blank" rel="noopener" href="https://fathers-private-account.herokuapp.com/">https://fathers-private-account.herokuapp.com/</a></p>
 <p>登入帳號:</p>
-<p>Email:<br><a href="mailto:&#105;&#x6d;&#x66;&#x61;&#x74;&#104;&#101;&#x72;&#64;&#101;&#120;&#x61;&#109;&#x70;&#x6c;&#101;&#x2e;&#x74;&#119;">&#105;&#x6d;&#x66;&#x61;&#x74;&#104;&#101;&#x72;&#64;&#101;&#120;&#x61;&#109;&#x70;&#x6c;&#101;&#x2e;&#x74;&#119;</a></p>
+<p>Email:<br><a href="mailto:&#x69;&#109;&#102;&#97;&#116;&#x68;&#101;&#114;&#x40;&#x65;&#120;&#97;&#109;&#112;&#108;&#x65;&#46;&#116;&#119;">&#x69;&#109;&#102;&#97;&#116;&#x68;&#101;&#114;&#x40;&#x65;&#120;&#97;&#109;&#112;&#108;&#x65;&#46;&#116;&#119;</a></p>
 <p>Password:<br>8888</p>
 
 
