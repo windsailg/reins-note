@@ -50,7 +50,6 @@ console.log(result)
 ### 過濾重複的值：
 
 ```javascript
-
 const arr = [1, 2, 2, 3, 3, 4]
 const result = arr.reduce((acc, cur) => {
      acc[cur] = cur
@@ -58,16 +57,13 @@ const result = arr.reduce((acc, cur) => {
 }, {})
 console.log(Object.values(result))
 // result = [1, 2, 3, 4]
-
 ```
 
 一樣在函式中加入 console.log(acc) 來測試看看，這裡直接把初始的 acc 的 initialValue 設定為一個空物件，並透過 acc[cur] = cur 直接用 cur 查找到的 key 對應的屬性值設為 cur 。
 
-假設 cur 目前為 1，得到 key 為 1 的 value 為 1，輸出: {1: 1}。
-
-假設 cur 目前為 2，得到 key 為 2 的 value 為 2，輸出: {1: 1, 2: 2}。
-
-這樣查找到重複的 key 就會直接複寫，不會產生重複的屬性，全部操作一遍以後，再用 Object.values(result) 方法取出物件中的 key，組成一個不重複值的陣列。
+如果 cur 目前為 1，找到 key = 1 的屬性, 並設定value = 1，acc為 {1: 1}。
+如果 cur 目前為 2，找到 key = 2 的屬性, 並設定value = 2，acc為: {1: 1, 2: 2}。
+這樣查找到重複的 key 屬性就會被複寫，不會產生重複的屬性，全部操作一遍以後，再用 Object.values() 方法取出物件中的 value，組成一個不重複值的陣列。
 
 ---
 
@@ -76,7 +72,6 @@ console.log(Object.values(result))
 介紹完數字陣列，現在來操作過濾物件陣列。
 
 ```javascript
-
 const arr = [
      { id: 1, name: 'Ken' },
      { id: 1, name: 'Ken' },
@@ -87,26 +82,25 @@ const arr = [
 ]
 const result = arr.reduce((acc, cur) => acc.find(item => item.id === cur.id) ? acc : [...acc, cur], [])
 console.log(result)
-
 ```
 
 > <s>**配上ES6的語法，就看不懂這段在幹嘛了呢，真棒。**</s>
 
 我們首先來看，先將 initialValue 設定為空陣列，並在累加過程中對 acc 當中的物件做 find()，因為 find() 方法只會回傳一次 true 或 false，那麼只要沒有 id 重複的物件，就會回傳 false 並 return 一個加入 cur 的陣列，另外 [...acc, cur] 是展開運算子，用來展開 acc 陣列，並加入 cur 到一個空的陣列中。
 
-如果不重複，回傳一個加入cur的陣列。
+結果：
 
 ```javascript
-// result = [
-//      { id: 1, name: 'Ken' },
-//      { id: 2, name: 'Joshua' },
-//      { id: 3, name: 'Shane' },
-//      { id: 4, name: 'Diva' }
-// ]
+result = [
+     { id: 1, name: 'Ken' },
+     { id: 2, name: 'Joshua' },
+     { id: 3, name: 'Shane' },
+     { id: 4, name: 'Diva' }
+]
 ```
 
 ---
 
 ### 結語
 
-其實 reduce() 操作上個人認為比較不直觀，因為這個方法的疊加器觀念比較進階，對初學者可能比較不友善，而且 reduce() 本身推薦的運用場景是拿來做陣列值累加或相減，如果要想更改篩選或比較當中的邏輯，可能需要先花比較多時間理解。
+其實 reduce() 操作上個人認為比較不直觀，因為這個方法的疊加器觀念比較進階，對初學者可能比較不友善， 而且 reduce() 本身推薦的運用場景是拿來做陣列值累加或相減，如果要想更改篩選或比較當中的邏輯，可能需要先花比較多時間理解。
