@@ -1,5 +1,5 @@
 ---
-title: JavaScript  ES6 用 reduce() 方法篩選鍵值重複的陣列物件
+title: JavaScript 用 reduce() 方法篩選鍵值重複的陣列物件
 tags: 
 - JavaScript 
 - method
