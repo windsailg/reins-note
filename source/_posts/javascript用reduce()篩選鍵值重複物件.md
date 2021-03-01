@@ -15,11 +15,12 @@ date: 2021-02-28 20:10:05
 
  ## reduce() 方法
 
-reduce() 主要的使用場景多為相加一組陣列中的數值，並會回傳一個值，參數如下
+reduce() 會將 return 的值 儲存在 accumulator 並依照陣列的長度決定執行的次數，並會回傳一個值
+主要的使用場景多為相加一組陣列中的數值，參數如下
 
      reduce(callback[accumulator, currentValue, currentIndex, array], initialValue)
 
-**accumulator** 經由 currentValue 累加的值
+**accumulator** reduce的主角，用來記錄return的值
 **currentValue** 當前操作中的值
 **currentIndex** 當前操作值的索引
 **array** 操作的陣列本身
@@ -115,4 +116,4 @@ currentIndex 跟 array 筆者還沒查到好用的用法，本文先不討論
 
 ### 結語
 
-其實 reduce() 操作上個人覺得比較不直觀，因為這個方法的疊加器觀念比較進階，對初學者可能比較不友善，而且 reduce()　本身的運用場景是拿來做陣列值相加，如果要想更改篩選或比較當中的邏輯，可能需要先花比較多時間理解。
+其實 reduce() 操作上個人覺得比較不直觀，因為這個方法的疊加器觀念比較進階，對初學者可能比較不友善，而且 reduce() 本身的運用場景是拿來做陣列值相加，如果要想更改篩選或比較當中的邏輯，可能需要先花比較多時間理解。
