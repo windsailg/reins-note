@@ -5,22 +5,23 @@ tags:
 - method
 - reduce()
 - ES6
+- 陣列
+- 物件
 - 展開運算子
 abbrlink: 0228
 date: 2021-02-28 20:10:05
 ---
 
 
-
  ## reduce() 方法
 
-reduce() 的使用場景多為相加一組陣列中的數值，並會回傳一個值，參數如下
+reduce() 主要的使用場景多為相加一組陣列中的數值，並會回傳一個值，參數如下
 
      reduce(callback[accumulator, currentValue, currentIndex, array], initialValue)
 
 **accumulator** 經由 currentValue 累加的值
 **currentValue** 當前操作中的值
-**currentIndex** 當前的索引值
+**currentIndex** 當前操作值的索引
 **array** 操作的陣列本身
 **initialValue** 設定 accumulator 的初始值，可選填
 
@@ -38,7 +39,7 @@ currentIndex 跟 array 筆者還沒查到好用的用法，本文先不討論
      // result = 15
 
 打開 F12 的 Console 測試看看，印出來的值應為 15
-所以這個神奇的過程是什麼?
+中間發生了什麼神奇的事情呢?
 在函式中加入 console.log(acc) 來測試看看
 會得到1 3 5 8 11 15
 當中 acc 每次都會印出上次回傳的值
@@ -92,10 +93,10 @@ currentIndex 跟 array 筆者還沒查到好用的用法，本文先不討論
      console.log(result)
 
 
-**配上ES6的語法，就看不懂這段在幹嘛了呢，真棒。**
+<s>**配上ES6的語法，就看不懂這段在幹嘛了呢，真棒。**</s>
 
 我們首先來看，先將 initialValue 設定為空陣列
-並在每次比較時對 acc 當中的物件做 find()
+並在累加過程中對 acc 當中的物件做 find()
 因為 find() 方法只會回傳一次 true 或 false
 那麼只要沒有 id 重複的物件，就會回傳 false 並 return 一個加入 cur 的陣列
 另外 [...acc, cur] 是展開運算子，用來展開 acc 陣列，用來加入 cur 到一個空的陣列中，
