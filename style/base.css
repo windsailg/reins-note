@@ -8,6 +8,15 @@ html {
   width: 100%;
   height: 100%;
   font-size: 62.5%; }
+  html::-webkit-scrollbar {
+    width: 12px;
+    background-color: #0d131a; }
+  html::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin: 8px 0; }
+  html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #30485f; }
 
 body {
   width: 100%;
@@ -78,6 +87,15 @@ a {
 
 pre {
   tab-size: 2; }
+  pre::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent; }
+  pre::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin: 8px 0; }
+  pre::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #526e8b; }
   pre code {
     display: block;
     line-height: 1.5;

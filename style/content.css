@@ -98,6 +98,7 @@
       margin-right: 7px; }
   .content pre {
     display: block;
+    background-color: #1d2d3c;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: "Inconsolata", Consolas, monospace, sans-serif;
