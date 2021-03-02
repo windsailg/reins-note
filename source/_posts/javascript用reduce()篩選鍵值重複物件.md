@@ -86,7 +86,7 @@ console.log(result)
 
 > <s>**配上ES6的語法，就看不懂這段在幹嘛了呢，真棒。**</s>
 
-我們首先來看，先將 initialValue 設定為空陣列，並在累加過程中對 acc 當中的物件做 find()，因為 find() 方法只會回傳一次 true 或 false，那麼只要沒有 id 重複的物件，就會回傳 false 並 return 一個加入 cur 的陣列，另外 [...acc, cur] 是展開運算子，用來展開 acc 陣列，並加入 cur 到一個空的陣列中。
+我們首先來看，先將 initialValue 設定為空陣列，並在累加過程中對 acc 當中的物件做 find()，因為 find() 方法只會回傳一個結果，那麼只要沒有 id 重複的物件，就會回傳一個 undefined ，並 return 一個加入 cur 的陣列，另外 [...acc, cur] 是展開運算子，用來展開 acc 陣列，並加入 cur 到一個空的陣列中。
 
 結果：
 
