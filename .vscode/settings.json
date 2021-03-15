@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
         "disqus"
-    ]
+    ],
+    "editor.fontFamily": "'MV Boli',微軟正黑體,'Segoe Script','Operator Mono',ProggyTinyTT, monospace",
+    "editor.fontLigatures": null
 }
